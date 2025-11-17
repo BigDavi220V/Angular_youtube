@@ -14,16 +14,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have the 'tentando_aprender_angular' title`, () => {
+  it(`should have the 'tela-login' title`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('tentando_aprender_angular');
+    expect(app.title).toEqual('tela-login');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, tentando_aprender_angular');
+    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, tela-login');
   });
 });
